@@ -11,6 +11,7 @@
 *Les classes sont les types références et les types références ne possèdent pas de valeurs mais une référence de l'objet en mémoire*
 *Tandis que les structures sont types valeurs et contient directement la valeur de l'objet en mémoire*
 *L'autre différence est qu'une structure bien qu'étant un objet ne peut être hérité. donc en résumé une structure n'hérite pas du comportement d'une autre structure excepté le type de base Object*
+*Une structure peut avoir un constructeur à l'exception du constructeur par défaut qui est interdit*
 
 
 

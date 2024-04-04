@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using FormationDotnet5.delegates;
 using FormationDotnet5.TP.POO;
+using FormationDotnet5.Structure;
 
 namespace FormationDotnet5
 {
@@ -49,7 +50,7 @@ namespace FormationDotnet5
             }
 
 
-            #region TP POO
+            /*#region TP POO
             Account CurrentAccountNicolas = new CurrentAccount(2000) { Owner = "Nicolas" };
             Account SavingsAccountNicolas = new SavingsAccount(2) { Owner = "Nicolas" };
             Account CurrentAccountGeremi = new CurrentAccount(500) { Owner = "Geremi" };
@@ -77,7 +78,22 @@ namespace FormationDotnet5
             SavingsAccountNicolas.AccountState();
             Console.WriteLine("\n");
 
+            #endregion*/
+
+
+            #region Strucure
+
+            Person person = new Person() { Age = 17, Prenom = "Bertin" };
+            Console.WriteLine(person.ToString());
+            FaitVieillir(ref person);
+            Console.WriteLine(person.Age);
+
+
             #endregion
+        }
+        private static void FaitVieillir(ref Person person)
+        {
+            person.Age++;
         }
 
         private static IVIPShppingFactory GetFactory(Customer customer)
